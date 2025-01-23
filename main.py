@@ -31,3 +31,11 @@ buttons = [
     ('1', 3, 0), ('2', 3, 1), ('3', 3, 2), ('-', 3, 3),
     ('0', 4, 0), ('.', 4, 1), ('+', 4, 2), ('=', 4, 3),
 ]
+for (text, row, col) in buttons:
+    if text == '=':
+        # Para o botão de "=" vamos associar a função de cálculo
+        button = tk.Button(root, text=text, width=10, height=2, font=("Arial", 18), command=calcular)
+    else:
+        # Para os outros botões, associamos a função de adicionar ao visor
+        button = tk.Button(root, text=text, width=5, height=2, font=("Arial", 18), command=lambda t=text: click_button(t))
+    button.grid(row=row, column=col)
