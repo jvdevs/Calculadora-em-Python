@@ -39,3 +39,6 @@ for (text, row, col) in buttons:
         # Para os outros botões, associamos a função de adicionar ao visor
         button = tk.Button(root, text=text, width=5, height=2, font=("Arial", 18), command=lambda t=text: click_button(t))
     button.grid(row=row, column=col)
+
+button_clear = tk.Button(root, text="C", width=5, height=2, font=("Arial", 18), command=limpar)
+button_clear.grid(row=4, column=3)
