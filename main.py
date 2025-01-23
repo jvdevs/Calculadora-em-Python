@@ -17,3 +17,5 @@ def calcular():
         
         entry.delete(0, tk.END)
         entry.insert(tk.END, "Erro")
+def limpar():
+    entry.delete(0, tk.END)
