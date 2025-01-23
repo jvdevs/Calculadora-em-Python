@@ -21,3 +21,6 @@ def limpar():
     entry.delete(0, tk.END)
 root = tk.Tk()
 root.title("Calculadora Simples")
+
+entry = tk.Entry(root, width=16, font=("Arial", 24), borderwidth=2, relief="solid", justify="right")
+entry.grid(row=0, column=0, columnspan=4)
