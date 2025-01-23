@@ -42,3 +42,6 @@ for (text, row, col) in buttons:
 
 button_clear = tk.Button(root, text="C", width=5, height=2, font=("Arial", 18), command=limpar)
 button_clear.grid(row=4, column=3)
+
+root.mainloop()
+
